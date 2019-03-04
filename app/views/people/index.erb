@@ -1,10 +1,10 @@
 <h1>People</h1>
-<table>
+<table class="table table-hover">
   <thead>
-    <th>Name</th>
-    <th>Birthdate</th>
-    <th>Edit</th>
-    <th>Delete</th>    
+    <th scope="col">Name</th>
+    <th scope="col">Birthdate</th>
+    <th scope="col">Edit</th>
+    <th scope="col">Delete</th>    
   </thead>
   <tbody>
     <% @people.each do |person| %>
@@ -18,12 +18,12 @@
           <%= "#{person.birthdate}" %>
         </td>
         <td>
-          <a href="<%= "/people/#{person.id}/edit" %>"> Edit
+          <a role="button" class="btn btn-outline-secondary" href="<%= "/people/#{person.id}/edit" %>"> Edit
         </td>        
         <td> 
           <form action="<%= "/people/#{person.id}" %>" method="post">
             <input type="hidden" name="_method" value="delete" />
-            <input type="submit" value="Delete" />
+            <input class="btn btn-danger" type="submit" value="Delete" />
           </form>
         </td>
       </tr>

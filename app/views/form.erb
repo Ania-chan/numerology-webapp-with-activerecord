@@ -3,26 +3,8 @@
   <p class="text-danger well"><%= @error %></p>
 <% end %>
 
-<form id="top-page" class="row justify-content-center align-items-center" action="/" method="post">
+<div id="top-page" class="row justify-content-center align-items-center">
   <div class="col-md-6">
-    <h1>Find out your numerology number!</h1>
-    <div>
-      <label for="first_name">First Name:</label>
-      <input type="text" name="first_name" value="First Name" />
-    </div>
-  
-    <div>
-      <label for="last_name">Last Name:</label>  
-      <input type="text" name="last_name" value="Last Name" />
-    </div>
- 
-    <div>
-      <label for="birthdate">Birthdate:</label>
-      <input name="birthdate" type="date" value="Birthdate" />
-    </div>
- 
-    <div>
-      <input type="submit" />
-    </div>
+    <button class="btn form-button" action="/people/new">Find out your numerology number!</button>
 </div>
 

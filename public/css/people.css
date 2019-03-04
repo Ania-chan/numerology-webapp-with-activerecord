@@ -1,13 +1,34 @@
-.new {
-    background: url("../img/create.jpg") no-repeat center;
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+#top-page {
+    background: url("/img/index.jpg") no-repeat center;
     background-size: cover;
     padding: 20px;
+    height: 100vh;
+}
+
+#profile-page {
+    background: url("/img/profile.jpg") no-repeat center;
+    background-size: cover;
+    padding: 20px;
+    height: 100vh;
+}
+
+.new {
+    background: url("/img/create.jpg") no-repeat center;
+    background-size: cover;
+    padding: 20px;
+    height: 100vh;
 }
 
 .edit {
-    background: url("../img/edit.jpg") no-repeat center;
+    background: url("/img/edit.jpg") no-repeat center;
     background-size: cover;
     padding: 20px;
+    height: 100vh;
 }
 
 .errors {
@@ -25,6 +46,15 @@ h1 {
     font-weight: 600;
 }
 
+#name {
+    font-size: 40px;
+}
+
+#birthdate {
+    font-size: 18px;
+    font-weight: 400;
+}
+
 label[for=first_name],
 label[for=last_name],
 label[for=birthdate] {
@@ -33,10 +63,27 @@ label[for=birthdate] {
     font-style: italic;
 }
 
-input[type=submit] {
+.form-button input[type=submit] {
     font-size: 32px;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     color: white;
     background-color: #fd395e;
+}
+
+.top-page-btn {
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    background-color: #fd395e;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a.database-link {
+    color: #fd395e;
 }
